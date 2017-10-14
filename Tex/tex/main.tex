@@ -10,11 +10,14 @@
 
 \usepackage{lipsum}											%Lorem Ipsum
 
+
 \usepackage{graphicx}										%Graphics for images as figures
 \usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage{url}											%URL formatting
 \usepackage{hyphenat}										%Allow \nohyphens{(text block)}.
+\usepackage[section]{placeins}								%Keep figures where they belong
 
+\input{tex/data/vocab}										%Import vocabulary
 
 % DOCUMENT ENTRY POINT
 \begin{document}
@@ -24,33 +27,17 @@
 %\maketitle
 \input{tex/cover}
 
-\begin{abstract}
-The abstract text goes here.
-\lipsum[1-6]
-\end{abstract}
+%Introduction
+\input{tex/intro}
 
-\section{Introduction}
-Here is the text of your introduction.
-\lipsum[1-6]
+\FloatBarrier
+\newpage
 
-\begin{equation}
-    \label{simple_equation}
-    \alpha = \sqrt{ \beta }
-\end{equation}
 
-\subsection{Subsection Heading Here}
-Write your subsection text here.
-\lipsum[1-6]
+%Character
+\input{tex/char}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=3.0in]{img/test_fig}
-    \caption{Simulation Results}
-    \label{simulationfigure}
-\end{figure}
-
-\section{Conclusion}
-Write your conclusion here.
-\lipsum[1-6]
+\FloatBarrier
+\newpage
 
 \end{document}
