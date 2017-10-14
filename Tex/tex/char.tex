@@ -1,4 +1,36 @@
 \section{Character}
 \label{sec:char}
 
-\lipsum[1-6]
+\subsection{Derived Statistics}
+\subsubsection{\getvalue{char/evasion/long} (\getvalue{char/evasion/short})}
+A character's \getvalue{char/evasion/long} (\getvalue{char/evasion/short}) determines their ability to avoid an incoming \getvalue{action/attack} by moving out of the way. 
+
+\begin{equation}
+	%\label{\getvalue{char/evasion/long}}
+	\getvalue{char/evasion/short} = 10 + \getvalue{char/ability/dex/mod} + \getvalue{char/skill/evasion}
+\end{equation}
+
+
+\subsubsection{\getvalue{char/block/long} (\getvalue{char/block/short})}
+A character's \getvalue{char/block/long} (\getvalue{char/block/short}) determines their ability to \getvalue{action/block} an incoming \getvalue{action/attack} by placing a \getvalue{equip/shield} or other suitable object between themself and the source.
+
+\begin{equation}
+	%\label{\getvalue{char/block/long}}
+	\getvalue{char/block/short} = 10 + \getvalue{char/ability/dex/mod} + {\getvalue{equip/shield} \getvalue{char/block/short}} + \getvalue{char/skill/block}
+\end{equation}
+
+\subsubsection{\getvalue{char/mad/long} (\getvalue{char/mad/short})}
+A character's \getvalue{char/mad/long} (\getvalue{char/mad/short}) determines the number of \getvalue{action/paction} they may take in a single \getvalue{combat/round} of \getvalue{combat/name}, and how effectively.
+
+\begin{equation}
+	\getvalue{char/mad/short} = \getvalue{char/ability/dex/name}
+\end{equation}
+
+\subsubsection{Speed}
+\lipsum[1-1]
+
+\subsubsection{Size}
+\lipsum[1-1]
+
+\subsubsection{Range Threshold}
+\lipsum[1-1]
