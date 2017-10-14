@@ -1,5 +1,5 @@
-pdflatex main.tex
+pdflatex tex/main.tex
 bibtex main
-pdflatex main.tex
-pdflatex main.tex
+pdflatex tex/main.tex
+pdflatex tex/main.tex
 xdg-open main.pdf
