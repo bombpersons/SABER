@@ -1,19 +1,37 @@
-\documentclass{article}
-\usepackage{graphicx}
+\title{SABER}
+\author{
+	dtConfect
+	\and
+	bombpersons
+	}
+\date{\today}
 
+\documentclass[12pt,final,twocolumn]{article}
+
+\usepackage{lipsum}											%Lorem Ipsum
+
+\usepackage{graphicx}										%Graphics for images as figures
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{url}											%URL formatting
+\usepackage{hyphenat}										%Allow \nohyphens{(text block)}.
+
+
+% DOCUMENT ENTRY POINT
 \begin{document}
 
-\title{Introduction to \LaTeX{}}
-\author{Author's Name}
 
-\maketitle
+%Title page
+%\maketitle
+\input{cover}
 
 \begin{abstract}
 The abstract text goes here.
+\lipsum[1-6]
 \end{abstract}
 
 \section{Introduction}
 Here is the text of your introduction.
+\lipsum[1-6]
 
 \begin{equation}
     \label{simple_equation}
@@ -22,6 +40,7 @@ Here is the text of your introduction.
 
 \subsection{Subsection Heading Here}
 Write your subsection text here.
+\lipsum[1-6]
 
 \begin{figure}
     \centering
@@ -32,5 +51,6 @@ Write your subsection text here.
 
 \section{Conclusion}
 Write your conclusion here.
+\lipsum[1-6]
 
 \end{document}
