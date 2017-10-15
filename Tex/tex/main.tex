@@ -1,12 +1,13 @@
-\title{SABER}
+\title{\getvalue{SYSTEM_NAME}}
 \author{
 	dtConfect
 	\and
 	bombpersons
 	}
-\date{\today}
+\date{}
+	
 
-\documentclass[12pt,final,twocolumn]{article}
+\documentclass[10pt,twoside,twocolumn]{book}
 
 %No section numbering
 \setcounter{secnumdepth}{0}
@@ -37,16 +38,19 @@
 \newpage
 
 %Contents page
-%TODO: Find a better way to present this on its own page, not in two columns
-\begin{table}
 \tableofcontents
-\end{table}
 
 \FloatBarrier
 \newpage
 
 %Character
 \input{tex/char}
+
+\FloatBarrier
+\newpage
+
+%Character Creation
+\input{tex/char_creation}
 
 \FloatBarrier
 \newpage
