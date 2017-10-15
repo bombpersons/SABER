@@ -8,8 +8,10 @@
 
 \documentclass[12pt,final,twocolumn]{article}
 
-\usepackage{lipsum}											%Lorem Ipsum
+%No section numbering
+\setcounter{secnumdepth}{0}
 
+\usepackage{lipsum}											%Lorem Ipsum
 
 \usepackage{graphicx}										%Graphics for images as figures
 \usepackage[pdfborder={0 0 0}]{hyperref}
@@ -26,7 +28,6 @@
 \setlength{\mathindent}{0cm}
 
 %Title page
-%\maketitle
 \input{tex/cover}
 
 %Introduction
@@ -35,6 +36,14 @@
 \FloatBarrier
 \newpage
 
+%Contents page
+%TODO: Find a better way to present this on its own page, not in two columns
+\begin{table}
+\tableofcontents
+\end{table}
+
+\FloatBarrier
+\newpage
 
 %Character
 \input{tex/char}
