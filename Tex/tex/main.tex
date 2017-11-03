@@ -6,11 +6,14 @@
 	}
 \date{}
 	
-
-\documentclass[10pt,twoside,twocolumn]{book}
+% Document-wide options:
+%fleqn = Left-alignment of formulae
+\documentclass[fleqn,10pt,twoside,twocolumn]{book}
 
 %No section numbering
 \setcounter{secnumdepth}{0}
+
+\usepackage{rpg-book}										%Experimental - rpg book template
 
 \usepackage{lipsum}											%Lorem Ipsum
 
@@ -19,7 +22,7 @@
 \usepackage{url}											%URL formatting
 \usepackage{hyphenat}										%Allow \nohyphens{(text block)}.
 \usepackage[section]{placeins}								%Keep figures where they belong
-\usepackage[fleqn]{amsmath}
+\usepackage{amsmath}									
 
 \input{tex/data/vocab}										%Import vocabulary
 
